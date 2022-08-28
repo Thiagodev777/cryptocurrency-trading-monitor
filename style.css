@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+}
+
+/* ASIDE */
+aside {
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #000;
+}
+aside button {
+  background-color: #000;
+  color: #fff;
+  height: 60px;
+  padding: 10px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  transition: 0.5s;
+}
+aside button:hover {
+  background-color: #ddd;
+  color: #141414;
+}
+
+
+
+/* RESULTADO */
+.resultado {
+  flex: 4;
+  height: 100vh;
+}
+#menu-mobile {
+  cursor: pointer;
+  width: 40px;
+}
+.resultado-title {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  color: #141414;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.resultado-title img {
+  max-width: 130px;
+  border-radius: 10px;
+}
+.resultado-coin-container {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.resultado-coin-container h3 {
+  padding-bottom: 10px;
+}
+.resultado-coin-container p {
+  padding: 10px;
+  font-weight: bold;
+}
+.title_img {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+#maior_preco_un_negociacao_24h_high,
+#menor_preco_un_negociacao_24h_low,
+#quantidade_negociada_ultimas_24h_vol,
+#preco_unitario_ultima_negociacao_last,
+#maior_preco_oferta_compra_24h_buy,
+#menor_preco_oferta_venda_24h_sell {
+  color: red;
+}
+
+
+.copy {
+  color: #000;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.copy a {
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+@media(max-width: 608px) {
+  #image_c {
+    display: none;
+  }
+  #resultado_h1 {
+    font-size: 1.5rem;
+  }
+  .copy {
+    font-size: 14px;
+  }
+}
+
+
